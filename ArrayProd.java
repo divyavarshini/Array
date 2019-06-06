@@ -16,6 +16,12 @@ class Solution {
   
   public static int[] arrayProd(int nums[]) {
     int[] res = new int[nums.length];
+    
+    if(nums.length == 0) {
+      System.out.println("Array is empty. So Bailing out!");
+      return res;
+    }
+    
     for(int i = 0; i < nums.length; i++) {
       int prod = 1;
       for(int j = 0; j < nums.length; j++) {
